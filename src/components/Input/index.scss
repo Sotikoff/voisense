@@ -1,0 +1,40 @@
+$size: 40px;
+$icon-size: 25px;
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: $size;
+  border: 1px solid lightblue;
+  border-radius: $size / 2;
+  box-sizing: border-box;
+}
+
+.input {
+  display: flex;
+  flex-grow: 1;
+  margin-left: $size / 2;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  caret-color: dodgerblue;
+
+  &::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+}
+
+.search {
+  color: dodgerblue;
+  margin-right: $icon-size / 2;
+}
+
+.container-focus {
+  border: 1px solid dodgerblue;
+}
