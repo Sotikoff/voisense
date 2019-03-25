@@ -2,3 +2,7 @@
   color: dodgerblue;
   cursor: pointer;
 }
+
+.mic-enabled {
+  color: lightgreen;
+}

@@ -20,12 +20,18 @@ $icon-size: 25px;
   outline: none;
   overflow: hidden;
   caret-color: dodgerblue;
-
-  &::-webkit-input-placeholder {
+  /* Chrome, Opera, Firefox */
+  &::placeholder {
     font-size: 16px;
   }
-
-  &:focus::-webkit-input-placeholder {
+  &:focus::placeholder {
+    color: transparent;
+  }
+  /* IE 10+ */
+  &:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  &:focus:-ms-input-placeholder {
     color: transparent;
   }
 }
